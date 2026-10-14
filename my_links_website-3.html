@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b12">
+  <title>My Links | RealRBXScriptz</title>
+  <style>
+    :root { color-scheme: dark; --green:#35df7b; --bg:#071b12; --panel:#101813; --card:#171e19; --muted:#9ba59e; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; padding:24px 14px;
+      display:flex; justify-content:center; align-items:center;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#f7faf8;
+      background:radial-gradient(ellipse at top, #153e2b 0%, #092418 38%, #050c08 100%);
+    }
+    .wrap { width:100%; max-width:520px; padding:26px 20px 22px; border:1px solid #1c3829; border-radius:32px; background:rgba(13,20,15,.96); box-shadow:0 24px 80px #0008; }
+    .logo { width:96px; height:96px; margin:0 auto 20px; display:grid; place-items:center; border-radius:30px; background:var(--green); color:#062313; font-size:30px; font-weight:900; box-shadow:0 8px 32px #35df7b22; }
+    h1 { margin:0; text-align:center; font-size:clamp(29px,7vw,40px); letter-spacing:-1.2px; }
+    .sub { margin:10px 0 28px; text-align:center; color:var(--muted); font-size:15px; }
+    .links { display:grid; gap:14px; }
+    .link {
+      min-height:88px; display:flex; align-items:center; gap:15px; padding:17px 18px;
+      text-decoration:none; color:#f7faf8; background:var(--card); border:1px solid #2a332d;
+      border-radius:23px; transition:transform .15s ease,border-color .15s ease,background .15s ease;
+    }
+    .link:hover,.link:focus-visible { transform:translateY(-2px); border-color:var(--green); background:#1b2820; outline:none; }
+    .icon { flex:0 0 48px; width:48px; height:48px; display:grid; place-items:center; border-radius:16px; background:#20372a; color:var(--green); }
+    .icon svg { width:25px; height:25px; fill:currentColor; }
+    .copy { min-width:0; flex:1; }
+    .name { display:block; font-size:17px; font-weight:800; line-height:1.25; }
+    .hint { display:block; margin-top:5px; color:#a9b2ac; font-size:13px; }
+    .arrow { flex:0 0 auto; color:var(--green); font-size:28px; font-weight:700; padding-left:4px; }
+    .unlock { width:100%; cursor:pointer; font:inherit; text-align:left; }
+    .unlock .icon { background:var(--green); color:#062313; }
+    .task-panel { margin-top:14px; padding:16px; border:1px solid #2a4935; border-radius:20px; background:#0b130e; }
+    .task-intro { margin:0 0 14px; color:#a9b2ac; font-size:13px; line-height:1.5; }
+    .task-row { display:flex; align-items:center; gap:12px; padding:12px; margin-top:10px; border:1px solid #2a332d; border-radius:16px; background:#171e19; }
+    .task-info { min-width:0; flex:1; }
+    .task-title { display:block; font-weight:800; font-size:14px; }
+    .task-status { display:block; margin-top:4px; color:#a9b2ac; font-size:12px; }
+    .task-btn { border:0; border-radius:12px; padding:10px 12px; background:var(--green); color:#062313; font-weight:800; cursor:pointer; white-space:nowrap; }
+    .task-btn:disabled { background:#2b3930; color:#a9b2ac; cursor:not-allowed; }
+    .unlock.locked { opacity:.65; border-color:#3a443d; }
+    .unlock.locked .icon { background:#29332c; color:#b4bdb6; }
+    .script-panel { display:none; margin-top:14px; padding:16px; border:1px solid #2a4935; border-radius:20px; background:#0b130e; }
+    .script-panel.open { display:block; }
+    .script-panel p { margin:0 0 10px; color:#a9b2ac; font-size:13px; line-height:1.5; }
+    .script-code { display:block; overflow-wrap:anywhere; white-space:pre-wrap; padding:12px; border-radius:12px; background:#171e19; color:#d9fbe5; font:13px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace; }
+    .copy-btn { margin-top:12px; border:0; border-radius:12px; padding:11px 15px; background:var(--green); color:#062313; font-weight:800; cursor:pointer; }
+    footer { margin-top:24px; text-align:center; color:#77837b; font-size:12px; }
+    @media (max-width:360px) { .wrap{padding:22px 14px;} .link{padding:14px 12px;gap:11px;} .name{font-size:15px;} }
+    @media (prefers-reduced-motion:reduce) { .link{transition:none;} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="logo" aria-label="RealRBXScriptz logo">GS</div>
+    <h1>My Links</h1>
+    <p class="sub">Choose a channel or watch my latest video</p>
+    <nav class="links" aria-label="My links">
+      <a class="link" href="https://youtube.com/@realrbxscriptz?si=pYf5-TO6GFsaIRfw" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></span>
+        <span class="copy"><span class="name">My First Channel</span><span class="hint">Subscribe on YouTube</span></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+      <a class="link" href="https://youtube.com/@zaincar78?si=-SlV0HV8PWlLMEvf" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></span>
+        <span class="copy"><span class="name">My Second Channel</span><span class="hint">Visit my other channel</span></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+      <a class="link" href="https://youtu.be/tmcYId4xEHs?si=M6NeTHpfv5RWDO6X" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.6 15.6V8.4l6.3 3.6-6.3 3.6ZM23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/></svg></span>
+        <span class="copy"><span class="name">Watch My Video</span><span class="hint">Watch on YouTube</span></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+      <section class="task-panel" aria-labelledby="taskHeading">
+        <h2 id="taskHeading" style="margin:0 0 6px;font-size:18px;">Complete 3 Steps to Unlock</h2>
+        <p class="task-intro">Visit both channels for 30 seconds each, and keep the video step open for 1 minute. Finish all three timers to unlock the script. Timers do not verify subscriptions or video views.</p>
+        <div class="task-row">
+          <span class="icon" aria-hidden="true">1</span>
+          <span class="task-info"><span class="task-title">Visit My First Channel</span><span class="task-status" id="status1">Not completed · 00:30</span></span>
+          <button class="task-btn" type="button" data-task="1">Start 0:30</button>
+        </div>
+        <div class="task-row">
+          <span class="icon" aria-hidden="true">2</span>
+          <span class="task-info"><span class="task-title">Visit My Second Channel</span><span class="task-status" id="status2">Not completed · 00:30</span></span>
+          <button class="task-btn" type="button" data-task="2">Start 0:30</button>
+        </div>
+        <div class="task-row">
+          <span class="icon" aria-hidden="true">3</span>
+          <span class="task-info"><span class="task-title">Watch My Video</span><span class="task-status" id="status3">Not completed · 01:00</span></span>
+          <button class="task-btn" type="button" data-task="3">Start 1:00</button>
+        </div>
+      </section>
+      <button class="link unlock locked" type="button" id="unlockButton" aria-expanded="false" aria-controls="scriptPanel" disabled>
+        <span class="icon" aria-hidden="true">🔓</span>
+        <span class="copy"><span class="name">🔒 UNLOCK ROBLOX SCRIPT</span><span class="hint" id="unlockHint">Complete all 3 one-minute steps first</span></span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </button>
+    </nav>
+    <section class="script-panel" id="scriptPanel" aria-live="polite">
+      <p>This displays the code as text only. It does not run it. Avoid executing unknown remote scripts, because they can change or access things in your game session.</p>
+      <code class="script-code" id="scriptCode">loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()</code>
+      <button class="copy-btn" type="button" id="copyScript">Copy script text</button>
+      <p id="copyStatus" role="status"></p>
+    </section>
+    <footer>Thanks for supporting my content 💚</footer>
+  </main>
+  <script>
+    const unlockButton = document.getElementById('unlockButton');
+    const unlockHint = document.getElementById('unlockHint');
+    const scriptPanel = document.getElementById('scriptPanel');
+    const completed = new Set();
+    const timers = new Map();
+    const destinations = {
+      1: 'https://youtube.com/@realrbxscriptz?si=pYf5-TO6GFsaIRfw',
+      2: 'https://youtube.com/@zaincar78?si=-SlV0HV8PWlLMEvf',
+      3: 'https://youtu.be/tmcYId4xEHs?si=M6NeTHpfv5RWDO6X'
+    };
+    const labels = {1:'My First Channel', 2:'My Second Channel', 3:'Watch My Video'};
+    const formatTime = seconds => '00:' + String(seconds).padStart(2, '0');
+
+    document.querySelectorAll('[data-task]').forEach(button => {
+      button.addEventListener('click', () => {
+        const id = Number(button.dataset.task);
+        if (completed.has(id) || timers.has(id)) return;
+        window.open(destinations[id], '_blank', 'noopener,noreferrer');
+        let remaining = id === 3 ? 60 : 30;
+        button.disabled = true;
+        button.textContent = formatTime(remaining);
+        document.getElementById('status' + id).textContent = 'Timer running · ' + formatTime(remaining);
+        const timer = window.setInterval(() => {
+          remaining -= 1;
+          button.textContent = formatTime(remaining);
+          document.getElementById('status' + id).textContent = 'Timer running · ' + formatTime(remaining);
+          if (remaining <= 0) {
+            window.clearInterval(timer);
+            timers.delete(id);
+            completed.add(id);
+            button.textContent = '✓ Done';
+            document.getElementById('status' + id).textContent = 'Completed ✓';
+            if (completed.size === 3) {
+              unlockButton.disabled = false;
+              unlockButton.classList.remove('locked');
+              unlockButton.querySelector('.name').textContent = '🔓 UNLOCK ROBLOX SCRIPT';
+              unlockHint.textContent = 'All 3 steps completed · Tap to reveal';
+            } else {
+              unlockHint.textContent = completed.size + '/3 steps completed';
+            }
+          }
+        }, 1000);
+        timers.set(id, timer);
+      });
+    });
+
+    unlockButton.addEventListener('click', () => {
+      if (completed.size !== 3) return;
+      const opened = scriptPanel.classList.toggle('open');
+      unlockButton.setAttribute('aria-expanded', String(opened));
+      unlockHint.textContent = opened ? 'Tap to hide script text' : 'All 3 steps completed · Tap to reveal';
+    });
+    document.getElementById('copyScript').addEventListener('click', async () => {
+      const code = document.getElementById('scriptCode').textContent;
+      const status = document.getElementById('copyStatus');
+      try {
+        await navigator.clipboard.writeText(code);
+        status.textContent = 'Script text copied.';
+      } catch (e) {
+        status.textContent = 'Copy is not available in this browser. You can select the text manually.';
+      }
+    });
+  </script>
+</body>
+</html>
